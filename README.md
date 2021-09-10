@@ -155,6 +155,20 @@ Example of object created in Smurf DB:
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
 1. What problem does the context API help solve?
+
+Context provides a way to share values between components without having to explicitly pass a prop through every level of the tree.
+
+
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+The store is where everything that changes in our application is stored. Reducers are pure functions that we use in our store to prevent any bugs. Action are packets of information that describes evnts that have occurred in the UI. When the store is created it needs a reducer. The reducer essentially makes a copy of the state. The actions tells the reducer how to update the state tree. The store is known as single source of truth becuase the only way to change your data in UI is to dispatch redux action which will change state within redux reducer.
+
+
 3. What does `redux-thunk` allow us to do? How does it change our `action-creators`?
+
+Redux thunk makes the flow asynchronous and make API calls from our action creators. 
+
+
 4. What is your favorite state management system you've learned and this sprint? Please explain why!
+
+Leaning state management is exhausting but if i had to choice one it would have to be managing state in a constructor. We dont have to scatter everything around like in Redux where we have
+many files for every thing. I get lost when we separte everything in different files instead of putting it in one file and then moving it. 
